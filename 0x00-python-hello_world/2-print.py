@@ -1,3 +1,5 @@
 #!/usr/bin/python3
-#print function to print message followed by a new line
-print("programming is like building a multilingual puzzle", end="\n")
+message = '"Programming is like building a multilingual puzzle'
+
+#print function
+print(message, end='\n')
