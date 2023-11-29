@@ -1,5 +1,5 @@
 #!/usr/bin/python3
 str = "Python is an interpreted, interactive, object-oriented programming\
  language that combines remarkable power with very clear syntax"
-#Extracting&printing desired subscripting using slicing and concatetation
-print(str[38:66],"with python",end='\n')
+str = str[39:67] + str[107:112] + str[:6]#Extracting&printing desired subscripting using slicing and concatetation
+print(str)
