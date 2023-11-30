@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 def uppercase(t):
     for char in t:
         if 'a' <= char <= 'z':
