@@ -1,8 +1,10 @@
-def islower(c): #Checks ASCII value of the character is within the lowercase range
+#!/usr/bin/python3
+
+def islower(c):
+    # Check if the ASCII value of the character is in the lowercase range
     return ord('a') <= ord(c) <= ord('z')
 
-# Test the function
+# Example usage
 print(islower('a'))  # True
-print(islower('Z'))  # False
-print(islower('7'))  # False
-
+print(islower('A'))  # False
+print(islower('1'))  # False
