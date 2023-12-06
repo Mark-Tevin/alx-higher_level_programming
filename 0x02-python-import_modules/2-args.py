@@ -1,21 +1,19 @@
 #!/usr/bin/python3
-import sys
-
-def print_arg():
-    arg = sys.argv[1:]
-    num_args = len(arg)
-
-    print(f"Number of argument{'s' if num_args != 1 else ''}: {num_args}", end='')
-
-    #print ": " or "."
-    if num_args > 0:
-        print(":", end='\n')
-    else:
-        print(".", end='\n')
+def no_of_argu(argv):
+    num_arg = len(argv) - 1
+    if num_arg == 0:
+        print("{:d} argument.".format(num_arg))
         return
+    else:
+        if num_arg == 1:
+            print("{:d} argument:".format(num_arg))
+        else:
+            print("{:d} arguments.".format(num_arg))
+        n = 1
+        while n <= num_arg:
+            print("{:d}: {:s}".format(n, argv[n]))
+            n += 1
 
-    #print each argument with its position
-    for i,arg in enumerate(arg, start = 1):
-        print(f"{i}: {arg}")
-if __name__ == "__main__":
-    print_arg()
+if __name__ =="__main__":
+    import sys
+    no_of_argu(sys.argv)
