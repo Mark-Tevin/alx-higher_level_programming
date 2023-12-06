@@ -1,11 +1,9 @@
+#!/usr/bin/python3
 import hidden_4
 
-def print_module_names():
-    module_names = [name for name in dir(hidden_4) if not name.startswith("__")]
-    module_names.sort()
+if __name__ == "__main__":
+    module_names = dir(hidden_4)
+    sorted_names = sorted(name for name in module_names if not name.startswith("__"))
 
-    for name in module_names:
+    for name in sorted_names:
         print(name)
-
-if  __name__ ++ "main__":
-    print_module_names()
