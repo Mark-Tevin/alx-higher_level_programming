@@ -1,18 +1,15 @@
 #!/usr/bin/python3
-import sys
+def sum_all(*args):
+    sum = 0
 
-def add_args():
-    num_argmnt = len(sys.argv)
-    print(f"{num_argmnt - 1} argument{'s' if (num_argmnt - 1) != 1 else ''}:", end='')
+    for num in args:
+        if not str(num).replace('-', '').isdigit():
+            return False
+        else:
+            sum += int(num)
+    return sum
 
-    # Print ": " or "."
-    if num_argmnt > 1:
-        print(" ")
-
-        R = sum(int(sys.argv[j]) for j in range(1, num_argmnt))
-        print(R)
-    else:
-        print(".")
 if __name__ == "__main__":
-    add_args()
-
+    import sys
+    result = sum_all(*sys.argv[1:])
+    print(result)
