@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-def no_of_argu(argv):
+def print_arg(argv):
     num_arg = len(argv) - 1
     if num_arg == 0:
         print("{:d} argument.".format(num_arg))
@@ -14,6 +14,6 @@ def no_of_argu(argv):
             print("{:d}: {:s}".format(n, argv[n]))
             n += 1
 
-if __name__ =="__main__":
+if __name__=="__main__":
     import sys
-    no_of_argu(sys.argv)
+    print_arg(sys.argv)
