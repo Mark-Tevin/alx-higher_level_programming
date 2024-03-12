@@ -1,7 +1,8 @@
 This is project day 2 and I tackled if/else,loops and functions in python language.
 The following are the lists of programs made:
+
 #A program that assigns a random signed number to the variable number each time it is executed
-# A program that prints the ASCII alphabet, in lowercase, not followed by a new line
+#A program that prints the ASCII alphabet, in lowercase, not followed by a new line
 #A program that prints all numbers from 0 to 98 in decimal and in hexadecimal
 #A prints numbers from 0 to 99.
 #A program that prints all possible different combinations of two digits.
