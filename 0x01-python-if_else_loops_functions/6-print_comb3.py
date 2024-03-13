@@ -4,7 +4,8 @@
 for i in range(10):
     for j in range(i, 10):
         if i == 0:
-            print("0{}".format(j), end=', ')
+            print("0{:d}".format(j), end=', ')
         else:
-            print("{}{}".format(i, j), end=', ')
+            print("{:d}{:d}".format(i, j), end=', ')
 print()
+
