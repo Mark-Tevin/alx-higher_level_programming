@@ -2,15 +2,6 @@
 
 # Print all possible combinations of two digits where 01 and 10 are considered the same combination
 for i in range(10):
-    if i == 0:  # Skip printing combination "00"
-        continue
-    for j in range(i, 10):
-        if i == 1 and j == 1:  # Skip printing combination "11"
-            continue
-        if i == 0:
-            print("0{:d}".format(j), end=', ')
-        else:
-            print("{:d}{:d}".format(i, j), end=', ')
-        if i == 8 and j == 9:  # Check if it's the combination "89"
-            break  # Stop printing combinations after "89"
+    for j in range(i+1, 10):
+        print("{:d}{:d}".format(i, j), end=', ')
 print()
