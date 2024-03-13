@@ -2,21 +2,23 @@
 
 def uppercase(s):
     """
-    Print a string in uppercase followed by a new line.
+    Print a string in uppercase followed by a newline.
 
     Parameters:
-    s (str): The string to print.
-
-    Returns:
-    None
+    s (str): The string to convert to uppercase and print.
     """
-    uppercase_str = ""
-    for c in s:
-        if 'a' <= c <= 'z':
-            # Convert lowercase character to uppercase using ASCII values
-            uppercase_str += chr(ord(c) - 32)
+    # Initialize an empty string to store the uppercase version
+    upper_string = ""
+
+    # Iterate over each character in the string
+    for char in s:
+        # Convert the character to uppercase using ASCII values
+        if 'a' <= char <= 'z':
+            upper_char = chr(ord(char) - 32)  # Convert lowercase to uppercase
         else:
-            uppercase_str += c
-    
-    print(uppercase_str)  # Print the uppercase string
-    print()  # Print a new line
+            upper_char = char  # Keep non-alphabetic characters unchanged
+        # Append the uppercase character to the result string
+        upper_string += upper_char
+
+    # Print the uppercase string followed by a newline
+    print(upper_string, end='\n')
