@@ -1,6 +1,8 @@
+#!/usr/bin/python3
 import sys
 
-num_args = len(sys.argv) - 1
+if __name__ == "__main__":
+    num_args = len(sys.argv) - 1
 
 plural = "arguments" if num_args > 1 else "argument"
 print(f"Number of {plural}: {num_args}")
