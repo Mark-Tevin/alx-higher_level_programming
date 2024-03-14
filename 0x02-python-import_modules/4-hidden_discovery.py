@@ -1,3 +1,5 @@
+#!/usr/bin/python3
+
 import uncompyle6  # Library for decompiling .pyc files
 import re
 
