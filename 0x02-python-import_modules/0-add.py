@@ -6,7 +6,7 @@ b = 2
 
 def addition():
     result = add(a, b)
-    print("{} + {} = {}".format(a, b, result), end='\n')
+    print("{} + {} = {}".format(a, b, result), end=' ')
 
 if __name__ == '__main__':
     addition()  # Call the function to print the result
