@@ -6,6 +6,8 @@ plural = "arguments" if num_args > 1 else "argument"
 print(f"Number of {plural}: {num_args}")
 
 if num_args > 0:
-    print(":", end="")  # Print a colon only if there are arguments
+    # Directly start listing arguments without a colon
     for i, arg in enumerate(sys.argv[1:], 1):
         print(f"\n{i}: {arg}", end="")
+    # Print a final newline for formatting
+    print()  # Add this line to ensure a newline at the end
