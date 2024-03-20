@@ -2,7 +2,7 @@
 
 def search_replace(my_list, search, replace):
     """
-    Searches for a specific element in a list and replaces it with a new element,
+    Searches for occurrences of a specific element in a list and replaces them with a new element,
     returning a new list with the replacements.
 
     Args:
@@ -11,6 +11,7 @@ def search_replace(my_list, search, replace):
         replace: The element to replace with.
 
     Returns:
-        new_list: The new list with replacements.
+        list: The new list with replacements.
     """
-    return [replace if item == search else item for item in my_list]
+    new_list = [replace if item == search else item for item in my_list]
+    return new_list
