@@ -1,10 +1,13 @@
 #!/usr/bin/python3
-"""Contains the inherits_from module
+"""
+===================================
+module with method inherits_from
+===================================
 """
 
 
 def inherits_from(obj, a_class):
-    """Returns issubclass object a_class
-    """
+    """Method that return True if an object is an instance of a class
+    that inherited from"""
 
-    return (issubclass(type(obj), a_class) and type(obj) != a_class)
+    return False if type(obj) is a_class else isinstance(obj, a_class)
