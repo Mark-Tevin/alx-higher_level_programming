@@ -34,8 +34,6 @@ python 3.4 and pep8
 ## Versioning
 for my learning in ALX
 
-## Authors
+## Author
 
---TEVIN  tevinsmark@gail.com                                    
-                                                                               
-## Files
+--TEVIN  tevinsmark@gmail.com
