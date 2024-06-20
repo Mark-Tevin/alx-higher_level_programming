@@ -4,8 +4,5 @@
  * prints My number: <first argument converted in integer>
  * if the first argument can be converted to an integer
 */
-if (isNaN(process.argv[2]) || process.argv[2] === undefined) {
-  console.log('Not anumber');
-} else {
-  console.log('My number:', parseInt(process.argv[2]));
-}
+const num = Math.floor(Number(process.argv[2]));
+console.log(isNaN(num) ? 'Not a number' : `My number: ${num}`);
