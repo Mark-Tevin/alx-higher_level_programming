@@ -17,7 +17,7 @@ def find_peak(list_of_integers):
     complexity which is super for most algorithm problem.
     The tricky part is to solve it with O(log(n)) time complexity
 
-    Usually Binary Search is being used in sorted arrays(also known as 
+    Usually Binary Search is being used in sorted arrays(also known as
     Bitonic array, or a sorted array), this case is different as we can't
     sort the array.
 
@@ -34,7 +34,7 @@ def find_peak(list_of_integers):
         return None
     length = len(arr)
 
-    start, end = 0, length -1
+    start, end = 0, length - 1
     while start < end:
         mid = start + (end - start) // 2
         if arr[mid] > arr[mid-1] and arr[mid] > arr[mid + 1]:
