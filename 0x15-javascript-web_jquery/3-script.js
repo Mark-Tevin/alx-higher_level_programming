@@ -1,6 +1,8 @@
-// script that adds the Class red to the <header> element when the user
-// clicks on the tag DIV#red_header
-const $ = window.$;
-$('#red_header').bind('click', function () {
-  $('header').addClass('red');
+// Wait for the document to be fully loaded
+$(document).ready(function () {
+  // Add a click event listener to the <div> with ID "red_header"
+  $('#red_header').click(function () {
+    // Add the class "red" to the <header element
+    $('header').addClass('red');
+  });
 });
